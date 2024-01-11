@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="loginMessageLabel" fitHeight="417.0" fitWidth="276.0" layoutX="-21.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/graduation-high-school-university-concept-space-text.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="275.0" layoutY="171.0" text=" Username :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernametextfield" alignment="TOP_LEFT" layoutX="349.0" layoutY="167.0" prefHeight="26.0" prefWidth="173.0" promptText="username" />
+            <Label alignment="CENTER" layoutX="279.0" layoutY="218.0" text="Password :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="356.0" layoutY="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="270.0" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="92.0" AnchorPane.topAnchor="40.0">
+               <image>
+                  <Image url="@../../../Downloads/lock_5797972.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="enterpasswordfield" alignment="TOP_LEFT" layoutX="349.0" layoutY="214.0" prefHeight="26.0" prefWidth="173.0" promptText="password" />
+            <Button fx:id="cancelbutton" alignment="CENTER" layoutX="276.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancelbuttonOnAction" prefHeight="32.0" prefWidth="250.0" style="-fx-background-color: #0ebc9c;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginbutton" alignment="CENTER" layoutX="276.0" layoutY="292.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="250.0" style="-fx-background-color: #0ebc9c;" text="Login">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="276.0" layoutY="259.0" prefWidth="250.0" text="Invalid Login . Please try again." textFill="#ee2828">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <image>
+            <Image url="@../../../Downloads/imgjava/graduation-high-school-university-concept-space-text.jpg" />
+         </image>
+      </AnchorPane>
+   </top>
+</BorderPane>
